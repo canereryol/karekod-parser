@@ -1,6 +1,6 @@
 {
   "name": "karekod-parser",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A package for parse DataMatrix code on the drug packages in Turkey into object.",
   "main": "index.js",
   "scripts": {

@@ -1,10 +1,10 @@
 {
   "name": "karekod-parser",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A package for parse DataMatrix code on the drug packages in Turkey into object.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "license": "ISC",
   "dependencies": {
     "moment": "^2.22.1"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
   }
 }

@@ -1,7 +1,7 @@
 var moment = require('moment');
 
 exports.parse = function (karekod) {
-  var karekodExp = /^010(\d{13})21(.*)17(\d{2})(\d{2})(\d{2})10(.*)/g;
+  var karekodExp = /010(\d{13})21([^\W_]{1,20})-?17(\d{2})(0[1-9]|1[012])(00|0[1-9]|[12][0-9]|3[01])10([^\W_]{1,20})$/g;
   var kk = karekodExp.exec(karekod);
   if (!kk) {
     return null;
@@ -11,9 +11,10 @@ exports.parse = function (karekod) {
     var skt = kk[5] === '00' ? moment(kk[3] + kk[4], 'YYMM') : moment(kk[3] + kk[4] + kk[5], 'YYMMDD');
     return {
       barkod: kk[1],
+      gtin: '0'+kk[1],
       sn: kk[2],
-      pn: kk[6],
-      sktf: sktf,
+      bn: kk[6],
+      xd: sktf,
       skt: skt,
       miad: skt.diff(bugun, 'days')
     }

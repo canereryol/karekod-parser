@@ -4,7 +4,7 @@ exports.parse = function (karekod) {
   if (!karekod) {
     return null
   }
-  var karekodExp = /010(\d{13})21([^\W_]{1,20})-?17(\d{2})(0[1-9]|1[012])(00|0[1-9]|[12][0-9]|3[01])10([^\W_]{1,20})$/g;
+  var karekodExp = /010(\d{13})21([^\W_]{1,20})-?17(\d{2})(0[1-9]|1[012])(00|0[1-9]|[12][0-9]|3[01])10([^\W_]{1,20})$/;
   var kk = karekod.match(karekodExp);
   if (!kk) {
     return null;

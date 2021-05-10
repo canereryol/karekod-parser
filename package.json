@@ -21,14 +21,14 @@
   "author": "Caner Eryol <ceryol@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.24.0"
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "braces": "^3.0.2",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "jest": "^23.6.0",
-    "js-yaml": "^3.13.1",
-    "lodash": "^4.17.14",
+    "js-yaml": "^3.14.1",
+    "lodash": "^4.17.21",
     "mem": "^5.1.1"
   }
 }
